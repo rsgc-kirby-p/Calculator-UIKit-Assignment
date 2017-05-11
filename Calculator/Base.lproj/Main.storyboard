@@ -227,6 +227,9 @@
                             <constraint firstAttribute="trailing" secondItem="7II-7R-xLZ" secondAttribute="trailing" id="qBz-8a-s2J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelDisplay" destination="hTZ-Bq-9zu" id="LSR-Np-xsm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
