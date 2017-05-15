@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+//made the outlet
     @IBOutlet weak var labelDisplay: UILabel!
     
-    //create an instance  
+    //create an instance (object) of the Calculator class
+    var model = Calculator()
+     
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +29,71 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onePressed(_ sender: Any) {
+        model.addToNewValue(digit: "1")
+        labelDisplay.text = model.providedValue
+    }
+    
+    
+    @IBAction func twoPressed(_ sender: Any) {
+        model.addToNewValue(digit: "2")
+        labelDisplay.text = model.providedValue
+
+    }
+    
+    @IBAction func threePressed(_ sender: Any) {
+        model.addToNewValue(digit: "3")
+        labelDisplay.text = model.providedValue
+
+    }
+    
+    
+    @IBAction func fourPressed(_ sender: Any) {
+        model.addToNewValue(digit: "4")
+        labelDisplay.text = model.providedValue
+
+    }
+    
+    
+    @IBAction func fivePressed(_ sender: Any) {
+        model.addToNewValue(digit: "5")
+        labelDisplay.text = model.providedValue
+
+    }
+    
+    
+    @IBAction func sixPressed(_ sender: Any) {
+        model.addToNewValue(digit: "6")
+        labelDisplay.text = model.providedValue
+
+    }
+   
+    @IBAction func sevenPressed(_ sender: Any) {
+        model.addToNewValue(digit: "7")
+        labelDisplay.text = model.providedValue
+
+    }
+    
+   
+    @IBAction func eightPressed(_ sender: Any) {
+        model.addToNewValue(digit: "8")
+        labelDisplay.text = model.providedValue
+
+    }
+  
+    
+    
+    @IBAction func ninePressed(_ sender: Any) {
+        model.addToNewValue(digit: "9")
+        labelDisplay.text = model.providedValue
+
+    }
+    
+    
+    @IBAction func zeroPressed(_ sender: Any) {
+        model.addToNewValue(digit: "0")
+        labelDisplay.text = model.providedValue
+
+    }
 }
 
