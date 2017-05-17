@@ -66,6 +66,9 @@
                                                 <state key="normal" title="÷">
                                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="divide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COM-P2-iq1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -112,6 +115,9 @@
                                                 <state key="normal" title="×">
                                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjk-NS-hwG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -161,6 +167,9 @@
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Tz-zZ-4oJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -207,6 +216,9 @@
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ou-JZ-loF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -239,6 +251,9 @@
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="equals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUr-sf-qLB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

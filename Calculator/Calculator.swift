@@ -44,6 +44,29 @@ class Calculator {
         updateState()
     }
     
+    func add() {
+        operation = Operation.addition
+        
+        updateState()
+    }
+    
+    func subtract() {
+        operation = Operation.subtraction
+        
+        updateState()
+    }
+    
+    func plusminus() {
+        operation = Operation.plusminus
+        if computedValue != nil{
+            computedValue = computedValue! * (-1)
+            
+        }else{
+            updateState()
+            computedValue = computedValue! * (-1)
+        }
+    }
+    
     /**
      Updates calculator state.
      
