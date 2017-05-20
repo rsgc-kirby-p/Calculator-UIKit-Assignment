@@ -14,6 +14,7 @@ class Calculator {
     var providedValue : String = ""
     var computedValue : Double? = nil
     var operation : Operation? = nil
+//    var equation : Double = 0
     
     // MARK: Initializer(s)
     
@@ -67,6 +68,31 @@ class Calculator {
         }
     }
     
+    func clear() {
+        operation = Operation.clear
+        computedValue = computedValue! * 0
+        
+        operation = nil
+        providedValue = ""
+        computedValue = nil
+        
+        updateState()
+    }
+    
+    func percent() {
+
+        
+        operation = Operation.percent
+        if computedValue != nil{
+            computedValue = computedValue! / 100
+        }else{
+            updateState()
+            computedValue = computedValue! / 100
+        }
+        updateState()
+    }
+    
+    
     /**
      Updates calculator state.
      
@@ -116,6 +142,10 @@ class Calculator {
             computedValue = computedValue! * Double(providedValue)!
         } else if operation == Operation.division {
             computedValue = computedValue! / Double(providedValue)!
+        } else if operation == Operation.addition {
+            computedValue = computedValue! + Double(providedValue)!
+        } else if operation == Operation.subtraction {
+            computedValue = computedValue! - Double(providedValue)!
         }
         
         // The operation selected has been performed, so get ready to receive new operation
@@ -124,6 +154,16 @@ class Calculator {
         providedValue = ""
         
     }
+    
+//    func plusminus() {
+//        providedValue = String(equation)
+//        equation = equation * -1
+//        equation = Double(providedValue)!
+//        
+//        
+//        
+//    }
+    
     
     /**
      Makes the computed value become whatever value the user has typed into the calculator.
@@ -137,12 +177,14 @@ class Calculator {
     /**
      Resets the operation, provided value, and computed value.
      */
-    func clear() {
-        
-        // Reset everthing
-        operation = nil
-        providedValue = ""
-        computedValue = nil
-    }
+//    func clear() {
+//        
+//        // Reset everthing
+//        operation = nil
+//        providedValue = ""
+//        computedValue = nil
+//
+//        updateState()
+//    }
     
 }

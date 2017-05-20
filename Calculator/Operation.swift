@@ -20,6 +20,8 @@ enum Operation {
     case division
     case subtraction
     case addition
-    case percentage
+//    case percentage
     case plusminus
+    case clear
+    case percent
 }
